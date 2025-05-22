@@ -100,10 +100,13 @@ Abra uma [issue](https://github.com/luizdeveloperr/gratian-manager/issues) ou um
 
 ---
 
-## 📜 Licença
+## ⚠️ Licença e uso
 
-Projeto mantido por [Gratian.pro](https://gratian.pro)  
-Licenciado sob os termos da **MIT License**.
+Este software é de uso **restrito e exclusivo**.  
+**Proibido copiar, modificar, redistribuir ou revender** sem autorização da **[Gratian.pro](https://gratian.pro)**.  
+Todos os direitos reservados.
+
+Entre em contato para solicitar uso autorizado.
 
 ---
 
