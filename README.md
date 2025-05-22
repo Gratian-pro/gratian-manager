@@ -16,9 +16,9 @@
 
 ## 🚀 Como instalar
 
-1. **Baixe o projeto em zip ou pelo link do repositório:**
+1. **Baixe o projeto em zip:**
 
-![Instalação](https://i.imgur.com/znE80KD.png) ![Instalação2](https://i.imgur.com/P9IdgmI.png)
+![Instalação](https://i.imgur.com/znE80KD.png)
 
 
 2. **Extraia o arquivo no servidor clicando em "Unarchive".**
