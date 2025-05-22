@@ -21,14 +21,18 @@
 ![Instalação](https://i.imgur.com/znE80KD.png) ![Instalação2](https://i.imgur.com/P9IdgmI.png)
 
 
-2. **Altere o arquivo de start do seu servidor na aba "Startup":**
+2. **Extraia o arquivo no servidor clicando em "Unarchive".**
+![extrair](https://i.imgur.com/ZZX2gQq.png)
+
+
+3. **Altere o arquivo de start do seu servidor na aba "Startup":**
 
 ![upload](https://i.imgur.com/FB94pgb.png)
 
 ![upload2](https://i.imgur.com/vnV38yS.png)
 
 
-3. **Ainda na aba Startup, Instale as dependências necessárias:**
+4. **Ainda na aba Startup, Instale as dependências necessárias:**
 
 ```bash
 npm i unzipper
@@ -36,13 +40,13 @@ npm i unzipper
 ![dependencia](https://i.imgur.com/jZRWksp.png)
 
 
-4. **Inicie o servidor:**
+5. **Inicie o servidor:**
 
 ![iniciar](https://i.imgur.com/kHXf9gP.png)
 
 ---
 
-## 🔁 Autoatualização via HTTP
+## 🔁 Autoatualização ao iniciar
 
 Ao iniciar o `loader.js`, o sistema:
 
@@ -68,15 +72,27 @@ Ao iniciar o `loader.js`, o sistema:
 
 ```
 diretório principal do seu servidor/
-├── index.js e arquivos do seu bot principal
+├── index.js               # Arquivos do seu bot principal
 ├── loader.js              # Sistema de atualização e inicialização
 ├── version.json           # Versão atual instalada
+├── bots
+│   └── 1
+│   └── 2
+│   └── 3
+│   └── 4
+│   └── 5
 ├── G-Manager/
 │   └── on.js              # Script principal dos bots
 ```
 
 ---
 
+## ⚠ Informações importantes
+1. Você deve ter um index.js ao menos no diretório principal do seu servidor.
+2. Cada pasta de "bots" é aonde você pode colocar os arquivos dos seus bots.
+3. Não é necessário apagar os arquivos do seu bot atual antes de instalar esse sistema.
+
+---
 ## 🤝 Contribuindo
 
 Quer sugerir melhorias ou reportar bugs?  
