@@ -24,8 +24,12 @@
 2. **Extraia o arquivo no servidor clicando em "Unarchive".**
 ![extrair](https://i.imgur.com/ZZX2gQq.png)
 
+3. **Mova os arquivos de dentro da pasta "gratian-manager-main" para o diretório principal:**
 
-3. **Altere o arquivo de start do seu servidor na aba "Startup":**
+![gif](https://i.ibb.co/cSvGLdJt/km-20250522-720p-50f-20250522-171519.gif)
+
+
+5. **Altere o arquivo de start do seu servidor na aba "Startup":**
 
 ![upload](https://i.imgur.com/FB94pgb.png)
 
