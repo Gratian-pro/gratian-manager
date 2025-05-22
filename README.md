@@ -24,19 +24,18 @@
 2. **Extraia o arquivo no servidor clicando em "Unarchive".**
 ![extrair](https://i.imgur.com/ZZX2gQq.png)
 
-3. **Mova os arquivos de dentro da pasta "gratian-manager-main" para o diretório principal:**
 
-![gif](https://i.ibb.co/cSvGLdJt/km-20250522-720p-50f-20250522-171519.gif)
+3. **Mova os arquivos de dentro da pasta "gratian-manager-main" para o diretório principal.**
 
 
-5. **Altere o arquivo de start do seu servidor na aba "Startup":**
+4. **Altere o arquivo de start do seu servidor na aba "Startup":**
 
 ![upload](https://i.imgur.com/FB94pgb.png)
 
 ![upload2](https://i.imgur.com/vnV38yS.png)
 
 
-4. **Ainda na aba Startup, Instale as dependências necessárias:**
+5. **Ainda na aba Startup, Instale as dependências necessárias:**
 
 ```bash
 npm i unzipper
