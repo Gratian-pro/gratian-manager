@@ -1,13 +1,13 @@
 # Gratian Manager
 
-**Gratian Manager** é um sistema de gerenciamento de múltiplos bots com suporte a autoatualização via HTTP, desenvolvido para rodar com simplicidade e eficiência em servidores Node.js.
+**Gratian Manager** é um sistema de gerenciamento de múltiplos bots com suporte a autoatualização via terminal, desenvolvido para rodar com simplicidade e eficiência em servidores Node.js.
 
 ---
 
 ## 📦 Funcionalidades
 
 - Suporte a múltiplos bots simultâneos  
-- Autoatualização automática via servidor HTTP  
+- Autoatualização automática ao reiniciar servidor  
 - Reinício automático após atualizações  
 - Estrutura modular e expansível  
 - Leve e fácil de instalar  
@@ -16,30 +16,29 @@
 
 ## 🚀 Como instalar
 
-1. **Baixe o projeto em zip:**
+1. **Baixe o projeto em zip ou pelo link do repositório:**
 
-![Instalação](https://i.imgur.com/znE80KD.png)
+![Instalação](https://i.imgur.com/znE80KD.png) ![Instalação2](https://i.imgur.com/P9IdgmI.png)
 
 
-2. **Ou se preferir, baixe por link:**
+2. **Altere o arquivo de start do seu servidor na aba "Startup":**
 
-```bash
-npm install
-```
+![upload](https://i.imgur.com/FB94pgb.png)
 
-3. **Verifique o arquivo `version.json`:**
+![upload2](https://i.imgur.com/vnV38yS.png)
 
-```json
-{
-  "version": "1.0.0"
-}
-```
 
-4. **Inicie o sistema com o loader:**
+3. **Ainda na aba Startup, Instale as dependências necessárias:**
 
 ```bash
-node loader.js
+npm i unzipper
 ```
+![dependencia](https://i.imgur.com/jZRWksp.png)
+
+
+4. **Inicie o servidor:**
+
+![iniciar](https://i.imgur.com/kHXf9gP.png)
 
 ---
 
@@ -55,12 +54,11 @@ Ao iniciar o `loader.js`, o sistema:
    - Reinicia o sistema
 4. Se estiver atualizado, continua a execução normalmente
 
-### Exemplo de `version.json` no servidor remoto:
+### Exemplo de `version.json` que deve haver no seu servidor:
 
 ```json
 {
-  "version": "1.0.1",
-  "zip": "http://seu-servidor.com/updates/gratianmanager-v1.0.1.zip"
+  "version": "1.0.2"
 }
 ```
 
@@ -69,7 +67,8 @@ Ao iniciar o `loader.js`, o sistema:
 ## 🌐 Estrutura do Projeto
 
 ```
-gratianmanager/
+diretório principal do seu servidor/
+├── index.js e arquivos do seu bot principal
 ├── loader.js              # Sistema de atualização e inicialização
 ├── version.json           # Versão atual instalada
 ├── G-Manager/
@@ -81,7 +80,7 @@ gratianmanager/
 ## 🤝 Contribuindo
 
 Quer sugerir melhorias ou reportar bugs?  
-Abra uma [issue](https://github.com/seuusuario/gratianmanager/issues) ou um pull request.
+Abra uma [issue](https://github.com/luizdeveloperr/gratian-manager/issues) ou um pull request.
 
 ---
 
@@ -95,5 +94,5 @@ Licenciado sob os termos da **MIT License**.
 ## 📞 Suporte
 
 - 🌐 Site: [https://gratian.pro](https://gratian.pro)  
-- 📧 E-mail: suporte@gratian.pro  
-- 💬 Discord: [discord.gg/seulink](https://discord.gg/seulink)
+- 📧 E-mail: sac@gratian.pro  
+- 💬 Discord: [discord.gg/gratian](https://discord.gg/gratian)
