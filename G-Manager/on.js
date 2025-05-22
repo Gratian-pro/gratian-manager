@@ -9,17 +9,14 @@ const botPrincipal = path.join(__dirname, "..", "index.js");
 // Caminho da pasta bots/
 const botsDir = path.join(__dirname, "..", "bots");
 
-// Array para armazenar os status dos bots
 const statusBots = [];
 
-// Função para adicionar status formatado
 const addStatus = (nome, status, icone) => {
   statusBots.push(`[${nome}] ${icone} ${status}`);
 };
 
-// Inicia o processo
 (async () => {
-  // Executa o bot principal
+
   try {
     require(botPrincipal);
     addStatus("Principal", "Bot online", "🟢 ");
@@ -27,7 +24,7 @@ const addStatus = (nome, status, icone) => {
     addStatus("Principal", "Erro ao iniciar", "🔴 ");
   }
 
-  // Lê as subpastas de bots/
+
   const pastas = fs.readdirSync(botsDir, { withFileTypes: true });
 
   for (const dirent of pastas) {
@@ -72,10 +69,10 @@ const addStatus = (nome, status, icone) => {
     }
   }
 
-  // Limpa o terminal
+
   console.clear();
 
-  // Exibe status final
+  
   console.log(chalk.green("Status"));
   statusBots.forEach(msg => {
     console.log(chalk.green(msg));
