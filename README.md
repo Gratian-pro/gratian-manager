@@ -17,12 +17,8 @@
 ## 🚀 Como instalar
 
 1. **Baixe o projeto em zip:**
+[Instalação](https://i.imgur.com/znE80KD.png)
 
-```bash
-wget https://seu-servidor.com/gratianmanager.zip
-unzip gratianmanager.zip
-cd gratianmanager
-```
 
 2. **Instale as dependências:**
 
