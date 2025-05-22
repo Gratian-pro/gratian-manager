@@ -17,10 +17,11 @@
 ## 🚀 Como instalar
 
 1. **Baixe o projeto em zip:**
-[Instalação](https://i.imgur.com/znE80KD.png)
+
+![Instalação](https://i.imgur.com/znE80KD.png)
 
 
-2. **Instale as dependências:**
+2. **Ou se preferir, baixe por link:**
 
 ```bash
 npm install
