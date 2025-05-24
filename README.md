@@ -16,34 +16,48 @@
 
 ## 🚀 Como instalar
 
-1. **Baixe o projeto em zip:**
+1. **Instale a dependência no seu servidor:**
 
-![Instalação](https://i.imgur.com/znE80KD.png)
-
-
-2. **Extraia o arquivo no servidor clicando em "Unarchive".**
-![extrair](https://i.imgur.com/ZZX2gQq.png)
+<img src="https://media.discordapp.net/attachments/978811018505494571/1375600664767369247/20250523_192542.png?ex=68324773&is=6830f5f3&hm=eb7f63584b207fe6473aeea89e2e0fd90bbddda6023a6b246c1bbcfd52ba314e&=&format=webp&quality=lossless" width="450" height="150" alt="Imagem Pequena" />
 
 
-3. **Mova os arquivos de dentro da pasta "gratian-manager-main" para o diretório principal.**
-
-
-4. **Altere o arquivo de start do seu servidor na aba "Startup":**
-
-![upload](https://i.imgur.com/FB94pgb.png)
-
-![upload2](https://i.imgur.com/vnV38yS.png)
-
-
-5. **Ainda na aba Startup, Instale as dependências necessárias:**
-
+2. **Crie o arquivo "g-manager.js" no diretório principal do seu servidor (necessário para o sistema funcionar):**
 ```bash
-npm i unzipper
+const { exec, spawn } = require("child_process");
+const { existsSync } = require("fs");
+const { resolve } = require("path");
+
+const cli = resolve(__dirname, "node_modules/.bin/gratian-manager");
+
+const iniciar = () => {
+  console.log("Iniciando 'gratian-manager'...");
+  const proc = spawn(cli, [], { stdio: "inherit" });
+
+  proc.on("error", err => console.error("Erro:", err));
+  proc.on("exit", code => console.log(`Finalizado com código ${code}`));
+};
+
+if (existsSync(resolve(__dirname, "bots"))) {
+  console.log("Pasta 'bots/' já existe. Pulando 'init'...");
+  iniciar();
+} else {
+  console.log("Executando 'gratian-manager init'...");
+  exec(`${cli} init`, (err, out, errOut) => {
+    if (err) return console.error("Erro:", err.message);
+    if (errOut) console.error("Stderr:", errOut);
+    if (out) console.log(out);
+    iniciar();
+  });
+}
 ```
-![dependencia](https://i.imgur.com/jZRWksp.png)
 
 
-5. **Inicie o servidor:**
+3. **Defina o arquivo como principal do seu servidor:**
+
+<img src="https://media.discordapp.net/attachments/978811018505494571/1375621613583728711/20250523_204900.png?ex=68325af6&is=68310976&hm=250658769711c16a6631ef8ea1034fcf25043c529d4b2631c367a0aa3f113890&=&format=webp&quality=lossless" width="450" height="150" alt="Imagem Pequena" />
+
+
+4. **Inicie o servidor:**
 
 ![iniciar](https://i.imgur.com/kHXf9gP.png)
 
@@ -51,7 +65,7 @@ npm i unzipper
 
 ## 🔁 Autoatualização ao iniciar
 
-Ao iniciar o `loader.js`, o sistema:
+Ao iniciar, o sistema:
 
 1. Acessa um servidor remoto para obter o `version.json`
 2. Compara com a versão local
@@ -76,16 +90,7 @@ Ao iniciar o `loader.js`, o sistema:
 ```
 diretório principal do seu servidor/
 ├── index.js               # Arquivos do seu bot principal
-├── loader.js              # Sistema de atualização e inicialização
-├── version.json           # Versão atual instalada
-├── bots
-│   └── 1
-│   └── 2
-│   └── 3
-│   └── 4
-│   └── 5
-├── G-Manager/
-│   └── on.js              # Script principal dos bots
+├── g-manager.js           # Arquivo necessário pra executar
 ```
 
 ---
