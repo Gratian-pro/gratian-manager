@@ -89,15 +89,15 @@ Ao iniciar, o sistema:
 
 ```
 diretório principal do seu servidor/
-├── index.js               # Arquivos do seu bot principal
+├── bots                   # Pasta onde deve colcocar pastas com arquivos dos seus bots
 ├── g-manager.js           # Arquivo necessário pra executar
 ```
 
 ---
 
 ## ⚠ Informações importantes
-1. Você deve ter um index.js ao menos no diretório principal do seu servidor.
-2. Cada pasta de "bots" é aonde você pode colocar os arquivos dos seus bots.
+1. Você deve ter um index.js ao menos no diretório dentro da pasta bots do seu servidor.
+2. Cada pasta de "bots" é aonde você pode colocar os arquivos dos seus bots. Ex: bots/meubot/index.js
 3. Não é necessário apagar os arquivos do seu bot atual antes de instalar esse sistema.
 
 ---
