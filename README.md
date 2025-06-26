@@ -18,7 +18,7 @@
 
 1. **Instale a dependência no seu servidor:**
 
-<img src="https://ibb.co/Gv2ZRwmn" width="450" height="150" alt="Imagem Pequena" />
+<img src="https://cdn.discordapp.com/attachments/978811018505494571/1387799457755562045/20250523_204900.png?ex=685ea876&is=685d56f6&hm=cdfe64f4bbc9a4c3b7c63052d39a32957d4942555095317d47c3bb43a5f88275&" width="450" height="150" alt="Imagem Pequena" />
 
 
 2. **Crie o arquivo "g-manager.js" no diretório principal do seu servidor (necessário para o sistema funcionar):**
