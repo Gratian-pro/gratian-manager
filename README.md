@@ -18,7 +18,7 @@
 
 1. **Instale a dependência no seu servidor:**
 
-<img src="https://cdn.discordapp.com/attachments/978811018505494571/1387799457755562045/20250523_204900.png?ex=685ea876&is=685d56f6&hm=cdfe64f4bbc9a4c3b7c63052d39a32957d4942555095317d47c3bb43a5f88275&" width="450" height="150" alt="Imagem Pequena" />
+<img src="https://cdn.discordapp.com/attachments/978811018505494571/1375600664767369247/20250523_192542.png?ex=685e71b3&is=685d2033&hm=a4ffe030cefc62aed602f4da61d78f916ebe287fb8a3489d64f65dc1509b5ef8&" width="450" height="150" alt="Imagem Pequena" />
 
 
 2. **Crie o arquivo "g-manager.js" no diretório principal do seu servidor (necessário para o sistema funcionar):**
@@ -54,7 +54,7 @@ if (existsSync(resolve(__dirname, "bots"))) {
 
 3. **Defina o arquivo como principal do seu servidor:**
 
-<img src="https://media.discordapp.net/attachments/978811018505494571/1375621613583728711/20250523_204900.png?ex=68325af6&is=68310976&hm=250658769711c16a6631ef8ea1034fcf25043c529d4b2631c367a0aa3f113890&=&format=webp&quality=lossless" width="450" height="150" alt="Imagem Pequena" />
+<img src="https://cdn.discordapp.com/attachments/978811018505494571/1387799457755562045/20250523_204900.png?ex=685ea876&is=685d56f6&hm=cdfe64f4bbc9a4c3b7c63052d39a32957d4942555095317d47c3bb43a5f88275&" width="450" height="150" alt="Imagem Pequena" />
 
 
 4. **Inicie o servidor:**
