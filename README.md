@@ -19,7 +19,7 @@
 1. **Instale a dependência no seu servidor:**
 
 <img src="https://cdn.discordapp.com/attachments/978811018505494571/1375600664767369247/20250523_192542.png?ex=685e71b3&is=685d2033&hm=a4ffe030cefc62aed602f4da61d78f916ebe287fb8a3489d64f65dc1509b5ef8&" width="450" height="150" alt="Imagem Pequena" />
-
+[![20250523-192542.png](https://i.postimg.cc/hjmndQs8/20250523-192542.png)](https://postimg.cc/R6v2rFjq)
 
 2. **Crie o arquivo "g-manager.js" no diretório principal do seu servidor (necessário para o sistema funcionar):**
 ```bash
